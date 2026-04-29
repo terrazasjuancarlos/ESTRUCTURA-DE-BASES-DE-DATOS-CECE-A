@@ -13,7 +13,7 @@ public class Arbol {
         }
     }
 
-    // 🔹 Buscar nodo
+    //  Buscar nodo
     public static Nodo buscarNodo(Nodo raiz, int valor) {
         if (raiz == null) return null;
 
@@ -25,7 +25,7 @@ public class Arbol {
         return buscarNodo(raiz.derecho, valor);
     }
 
-    // 🔹 Obtener nivel
+    //  Obtener nivel
     public static int obtenerNivel(Nodo raiz, int valor, int nivel) {
         if (raiz == null) return -1;
 
@@ -37,7 +37,7 @@ public class Arbol {
         return obtenerNivel(raiz.derecho, valor, nivel + 1);
     }
 
-    // 🔹 Tipo de nodo
+    //  Tipo de nodo
     public static String tipoNodo(Nodo raiz, int valor) {
         Nodo nodo = buscarNodo(raiz, valor);
 
@@ -52,7 +52,6 @@ public class Arbol {
         return "Intermedio";
     }
 
-    // 🔹 MAIN DE PRUEBA
     public static void main(String[] args) {
 
         Nodo raiz = new Nodo(10);
